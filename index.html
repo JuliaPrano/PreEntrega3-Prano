@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>PreEntrega3 JavaScript Julia Prano</title>
 </head>
 <body>
-    
+    <h1>Agenda Virtual</h1>
+  <form id="formIngreso">
+    <label for="inputUser"></label><input id="inputUser" type="text" placeholder="Usuario">
+    <label for="inputPass"></label><input id="inputPass" type="text" placeholder="Contraseña">
+    <input type="submit" value="Ingresar">
+  </form>
+
+
+<h2>Cree la lista de Tareas de hoy</h2>
+  <form id="listaTareasDiarias">
+    <label for="tareas"></label><input id="tareas" type="text" placeholder="Tarea">
+    <label for="descripcionBreve"></label><input id="descripcionBreve" type="text" placeholder="Descripción breve">
+    <input type="submit" value="Agregar">
+  </form>
+  <div id="tareasIngresadas" style="display:none;">
+    <h3>Lista de Tareas Ingresadas </h3>
+    <div id="listaTareasIngr"></div>
+  </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
